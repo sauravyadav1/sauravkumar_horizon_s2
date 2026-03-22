@@ -1,0 +1,32 @@
+# Rover Distance Publisher (ROS 2)
+
+## What this project is
+This is a simple ROS 2 node written in Python that simulates a rover reporting its distance readings.  
+Instead of connecting to real sensors, it generates random values between **0 and 100 meters** and publishes them every second.  
+It’s a handy starting point for learning how to create publishers in ROS 2.
+
+---
+
+##  How it works
+1. first crrate Node for publisher,subscriber,get comand and analysis
+   The program defines a node called `rover_distance_publisher`.
+
+2. Publisher setup 
+   It publishes messages of type `std_msgs/Float64` on the topic `rover_distance`.
+
+3. Timer callback
+   Every 1 second, the node:
+   - Generates a random distance.
+   - Wraps it in a `Float64` message.
+   - Publishes it to the topic.
+   - Logs the value to the console.
+
+4. **ROS 2 lifecycle**  
+   - Initializes ROS 2 (`rclpy.init`).
+   - Spins the node so it keeps running.
+   - Cleans up when stopped.
+
+---
+
+##  Run the node
+## Option 1: Run directly
