@@ -14,7 +14,7 @@ int main() {
         cin >> x2 >> y2;
 
         // BLANK 1: Distance formula
-        distance = _______;
+        distance = sqrt(pow(x2 - x1, 2) +  pow(y2 - y1, 2));
         cout << "Distance: " << distance << " m" << endl;
 
         // Part B - Motion
@@ -26,8 +26,8 @@ int main() {
         cin >> vmax;
 
         // BLANK 2: Time to reach top speed
-        double t1 = _______;
-        double d1 = _______;
+        double t1 = (vmax-u)/a;
+        double d1 = u*t1 + (1/2)*a*t1*t1;
 
         // BLANK 3: Remaining distance at top speed
         double d2 = distance - d1;
