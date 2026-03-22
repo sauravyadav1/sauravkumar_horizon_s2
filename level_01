@@ -1,0 +1,43 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    double x1, y1, x2, y2;
+    double u, a, vmax, distance, time;
+
+    try {
+        // Part A - Coordinates
+        cout << "Enter origin (x1 y1): ";
+        cin >> x1 >> y1;
+        cout << "Enter destination (x2 y2): ";
+        cin >> x2 >> y2;
+
+        // BLANK 1: Distance formula
+        distance = _______;
+        cout << "Distance: " << distance << " m" << endl;
+
+        // Part B - Motion
+        cout << "Enter initial velocity: ";
+        cin >> u;
+        cout << "Enter acceleration: ";
+        cin >> a;
+        cout << "Enter top speed: ";
+        cin >> vmax;
+
+        // BLANK 2: Time to reach top speed
+        double t1 = _______;
+        double d1 = _______;
+
+        // BLANK 3: Remaining distance at top speed
+        double d2 = distance - d1;
+        double t2 = d2 / vmax;
+
+        time = t1 + t2;
+        cout << "Time required: " << time << " seconds" << endl;
+
+    } catch (...) {
+        cout << "Invalid input!" << endl;
+    }
+    return 0;
+}
