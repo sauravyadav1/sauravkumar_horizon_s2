@@ -1,0 +1,21 @@
+# Rover Distance Subscriber
+
+## What this program does
+This program listens for distance values that another node (the Rover Distance Publisher) is sending out.  
+Think of it like a walkie-talkie: the publisher "talks" by sending numbers, and this subscriber 
+"listens" and prints those numbers on the screen.
+
+---
+
+## How it works
+- The node is called rover_distance_subscriber
+- It subscribes to the topic rover_distance
+- Whenever a new distance value is published, the subscriber receives it and shows it in the console.
+
+
+## running process
+1. Make sure you have ROS 2 installed and sourced (`source /opt/ros/<distro>/setup.bash`).
+2. Save the file as `rover_distance_subscriber.py`.
+3. Run it directly
+
+  USED  python rover_distance_subscriber.py
